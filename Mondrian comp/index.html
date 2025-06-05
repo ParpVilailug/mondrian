@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="device-width initial-scale=1.0">
+        <title>Mondrian Project</title>
+        <style>
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                margin: 0;
+                padding: 0;
+            }
+
+            .container{
+                height: 900px;
+                width: 700px;
+                display: grid;
+                background-color: rgb(90, 11, 126);
+                grid-template: 1fr 0.5fr 0.5fr 1.5fr 0.5fr 0.5fr 1fr/ 0.7fr 0.3fr 0.7fr 0.7fr 0.3fr 0.7fr;
+                
+            }
+
+            .blue1{
+                background-color: rgb(18, 18, 82);
+                grid-column: span 2;
+                border: 9px solid black;
+            }
+
+            .yellow1{
+                background-color: rgb(209, 162, 6);
+                grid-column: span 3;
+                border: 9px solid black;
+                border-right: none;
+                border-left: none;
+            }
+
+            .red1{
+                background-color: brown;
+                grid-row: span 2;
+                border: 9px solid black;
+            }
+
+            .white1{
+                background-color: beige;
+                grid-column: span 3;
+                grid-row: span 2;
+                border-left: 9px solid black;
+            }
+
+            .black1{
+                background-color: black;
+                grid-area: 2/4/4/6;
+                border: 9px solid black;
+            }
+
+            .red2{
+                background-color: brown;
+                grid-area: 4/2/5/6;
+                order: 1;
+                border: 9px solid black;
+                border-left: none;
+                border-right: none;
+            }
+
+            .white2{
+                background-color: beige;
+                grid-area: 3/6/6/7;
+                border: 9px solid black;
+                border-top: none;
+            }
+
+            .white3{
+                background-color: beige;
+                border: 9px solid black;
+                border-top: none;
+                border-bottom: none;
+            }
+            .white4{
+                background-color: beige;
+                border-left: 9px solid;
+                border-bottom: 9px solid;
+                border-right: 9px solid;
+            }
+
+            .black2{
+                background-color: black;
+                grid-area: 5/2/7/4;
+            }
+
+            .white5{
+                background-color: beige;
+                grid-area: 5/4/7/7;
+                border: 9px solid;
+                border-top: none;
+                border-left: none;
+            }
+            .red3{
+                background-color: brown;
+                grid-area: 6/1/8/2;
+                border: 9px solid;
+                border-top: none;
+            }
+            .yellow2{
+                background-color: rgb(209, 162, 6);
+                grid-area: 7/2/8/5;
+                border: 9px solid;
+                border-left: none;
+                border-top: none;
+                border-right: none;
+            }
+            .blue2{
+                background-color: rgb(18, 18, 82);
+                grid-area: 7/5/8/7;
+                border: 9px solid;
+                border-top: none;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="blue1"></div>
+            <div class="yellow1"></div>
+            <div class="red1"></div>
+            <div class="white1"></div>
+            <div class="black1"></div>
+            <div class="white2"></div>
+            <div class="red2"></div>
+            <div class="white3"></div>
+            <div class="white4"></div>
+            <div class="black2"></div>
+            <div class="white5"></div>
+            <div class="red3"></div>
+            <div class="yellow2"></div>
+            <div class="blue2"></div>
+        </div>
+    </body>
+</html>
